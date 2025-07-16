@@ -1,5 +1,6 @@
 # talking-clock
 
+
 ```
 talking-clock:
 -f [n]
@@ -8,3 +9,10 @@ talking-clock:
 -s
     stops clock
 ```
+
+
+Depends on Speech Dispatcher
+
+Arch: ```sudo pacman -S speech-dispatcher```
+
+Debian/Ubuntu: ```sudo apt install speech-dispatcher```

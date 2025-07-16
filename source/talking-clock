@@ -1,7 +1,12 @@
 #!/bin/bash
 
-#Original script Copyright (C) 2014  Jan <pikkewyn>
-#Fork by Jamie Larsson <jclarsson> 2025
+# Original script Copyright (C) 2014  Jan <pikkewyn>
+# Fork by Jamie Larsson <jclarsson> 2025
+#
+# Depends on Speech Dispatcher
+# sudo pacman -S speech-dispatcher
+# sudo apt install speech-dispatcher
+#
 #
 #This program is free software; you can redistribute it and/or modify
 #it under the terms of the GNU General Public License as published by

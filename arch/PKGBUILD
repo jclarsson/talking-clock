@@ -1,19 +1,16 @@
-# Maintainer: Jan pikkewyn <studies.tutor@gmail.com>
 pkgname=talking-clock
-pkgver=2.0
-pkgrel=2
+pkgver=3.0
+pkgrel=3
 pkgdesc="Simple bash script informing in human voice about current time"
 arch=('any')
-url="http://talking-clock.com"
+url="https://github.com/jclarsson/talking-clock"
 license=('GPL')
-depends=('alsa-utils')
-source=("http://talking-clock.com/${pkgname}.tar.gz")
+depends=('speech-dispatcher')
+source=("https://github.com/jclarsson/${pkgname}/archive/refs/heads/master.zip")
 md5sums=('3dc1f8dab075c98fb75dca256df19723')
 install=${pkgname}.install
 
 package() {
     cd "${srcdir}"
     install -D ${srcdir}/source/${pkgname} ${pkgdir}/usr/bin/${pkgname}
-    mkdir -p ${pkgdir}/usr/share/${pkgname}
-    install -D -m 444 ${srcdir}/source/sound/*.wav ${pkgdir}/usr/share/${pkgname}
 }
